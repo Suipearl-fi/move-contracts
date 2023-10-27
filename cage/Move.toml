@@ -1,0 +1,12 @@
+[package]
+name = "cage"
+version = "0.0.1"
+published-at = ""
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "mainnet-v1.8.2" }
+access_control = {local = "../access_control/", addr_subst = {  "access_control" = "" } }
+pearl = {local = "../pearl/", addr_subst = {  "pearl" = "" } }
+oyster = {local = "../oyster/", addr_subst = {  "oyster" = "" } }
+
+[addresses]
+cage = ""
